@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.appNav{
+  display: flex;
+  height: 4.5rem;
+  padding: 1rem;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.heroSection{
+  display: flex;
+  justify-content: center;
+}
+
+.heroLogo{
+  justify-self: center;
+  width: 90%;
+}
