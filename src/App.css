@@ -5,6 +5,7 @@
 body{
   margin: 0;
   font-family: "Poppins", sans-serif;
+  min-width: 502px;
 }
 
 .appNav{
@@ -17,10 +18,57 @@ body{
 
 .heroSection{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .heroLogo{
   justify-self: center;
   width: 90%;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-top: 1rem;
+  min-width: 502px;
+}
+
+.card {
+  width: 28vw;
+  min-width: 167px;
+  font-size: 1rem;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
 }
